@@ -13,12 +13,12 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;1,300&family=Open+Sans:wght@400;600;700&display=swap"
         rel="stylesheet">
-        <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Test Task</title>
 </head>
 
 <body>
-<!-------- HEADER -------->
+    <!-------- HEADER -------->
     <header>
         <div class="container header__container">
             <svg width="29" hight="20.71" class="icons-size">
@@ -27,46 +27,73 @@
             <p class="header__test-task">Test Task</p>
         </div>
     </header>
-<!-------- ABOUT -------->
+    <!-------- ABOUT -------->
     <section class="about">
         <div class="container about__container">
             <p class="about__title title">Do The Task And Have Fun</p>
             <p class="about__details">Be Persistent & Attentive To Details</p>
-
-            <p class="about__author">Andy</p>
-            <p class="about__profession">Head Of UX Design</p>
-
-            <p class="about__task">“The Style Of This Test Task
-                Matches The Style That You Will
-                Be Making Real Job In.”</p>
-
-                <div class="about-wrap">
-            
-            <h1 class="about__matter">
-                Fonts & Colors Matter
-            </h1>
-
-            <div class="about__responsive">
-                <h2 class="about__name">
-                    Responsive Design
-                </h2>
-                <p class="about__price">$19840</p>
-                <p class="about__rate">+8.5%</p>
-                <p class="about__text">You’ll Learn A Lot From This Task</p>
-            </div>
-
-            <div class="about__mobile">
-                <h2 class="about__name">
-                    Mobile Friendly
-                </h2>
-                <p class="about__price">$12380</p>
-                <p class="about__rate">-3.2%</p>
-                <p class="about__text">Don’t Forget About Small Devices</p>
-            </div>
-        </div>
+            <ul class="about__list list">
+                <li class="item">
+                    <div class="wrap-task">
+                        <img src="./img/photo.jpg" alt="photo Andy" width="115" height="115">
+                        <p class="about__author"> <strong>Andy</strong> <br>
+                            Head Of UX Design</p>
+                        </p>
+                    </div>
+                    <p class="about__task">“The Style Of This Test Task
+                        Matches The Style That You Will Be Making Real Job In.”</p>
+                </li>
+                <li>
+                    <div class="wrap-rate">
+                        <h1 class="about__matter">Fonts & Colors Matter</h1>
+                        <ul class="wrap-rate__list list">
+                            <li>
+                                <div class="about__responsive">
+                                    <h2 class="about__name">
+                                        Responsive Design
+                                    </h2>
+                                    <ul class="wrap-price">
+                                        <li>
+                                            <p class="about__price"><strong>$19840</strong></p>
+                                        </li>
+                                        <li>
+                                            <p class="about__rate about__rate-up">+8.5%</p>
+                                        </li>
+                                        <li><svg width="9.93" hight="8.83" class="icons-up-size">
+                                                <use href="./img/icons.svg#icon-rate-up"></use>
+                                            </svg>
+                                        </li>
+                                    </ul>
+                                    <p class="about__text">You’ll Learn A Lot From This Task</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="about__mobile">
+                                    <h2 class="about__name">
+                                        Mobile Friendly
+                                    </h2>
+                                    <ul class="wrap-price">
+                                        <li>
+                                            <p class="about__price"> <strong>$12380</strong></p>
+                                        </li>
+                                        <li>
+                                            <p class="about__rate about__rate-down">-3.2%</p>
+                                        </li>
+                                        <li><svg width="9.93" hight="8.83" class="icons-down-size">
+                                                <use href="./img/icons.svg#icon-rate-down"></use>
+                                            </svg>
+                                        </li>
+                                    </ul>
+                                    <p class="about__text">Don’t Forget About Small Devices</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
         </div>
     </section>
- <!-------- PROS -------->
+    <!-------- PROS -------->
     <section class="pros">
         <div class="container">
             <h2 class="pros__title title">What Pros Are Saying...</h2>
@@ -81,7 +108,7 @@
         </div>
 
     </section>
- <!-------- CODERS -------->
+    <!-------- CODERS -------->
     <section class="coders">
         <div class="container">
 
@@ -99,7 +126,7 @@
 
         </div>
     </section>
- <!-------- FOOTER -------->
+    <!-------- FOOTER -------->
     <footer>
         <div class="container">
             <h2><span>© Task Limited™</span>, 2020. All rights reserved</h2>.

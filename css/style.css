@@ -3,6 +3,9 @@
     --accent-bg-color: #3664D8;
     --secondary-color: #FFFFFF;
     --text-color: #212353;
+    --secondary-text-color: #FBFBFB;
+    --rate-text-color: #12121F;
+    --rate-secondary-text-color: #AFAFBD;
 }
 
 *,
@@ -48,6 +51,11 @@ body {
     color: var(--text-color);
 }
 
+.list {
+    list-style: none;
+    padding: 0;
+}
+
 .title {
     font-weight: 700;
     font-size: 32.9px;
@@ -57,6 +65,7 @@ body {
     text-align: center;
 }
 
+/*-------- HEADER --------*/
 
 .header__container {
     display: flex;
@@ -70,6 +79,7 @@ body {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
 }
+
 .header__test-task {
     font-weight: 700;
     font-size: 20.7133px;
@@ -80,62 +90,220 @@ body {
 .icons-size {
     width: 29px;
     height: 20.71px;
-    
-    fill: var(--secondary-color);
 
+    fill: var(--secondary-color);
 }
+
+/*-------- ABOUT --------*/
 
 .about {
     padding-top: 63px;
+    padding-bottom: 113px;
 }
 
 .about__title {
     max-width: 463px;
     margin-right: 64px;
 
+    text-align: left;
+    font-weight: 700;
+    font-size: 58px;
+    line-height: 1.1;
     text-transform: capitalize;
 }
 
+.about__list {
+    display: flex;
+    gap: 63.17px;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.item {
+    width: 486px;
+    padding: 27px 46px 40px 37px;
+
+    background-color: var(--secondary-color);
+    box-shadow: 0px 2.84946px 28.4946px rgba(0, 0, 0, 0.25);
+    border-radius: 35.6183px;
+}
+
+.wrap-task {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    margin-bottom: 4px;
+}
+
+.wrap-task>img {
+    border-radius: 50%;
+}
 
 .about__author {
+    font-weight: 600;
+    font-size: 20.392px;
+    line-height: 25px;
+
+    color: var(--text-color);
 }
-.about__profession {
-}
+
 .about__task {
+    display: block;
+    max-width: 310px;
+    margin-left: 130px;
+
+    text-align: center;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 18.5382px;
+    line-height: 23px;
+
+    color: var(--text-color);
 }
+
 .about__details {
+    text-align: right;
+    font-weight: 300;
+    padding-bottom: 19.7px;
+    font-size: 34px;
+    line-height: 1.1;
+    color: var(--text-color);
 }
+
+.wrap-rate {
+    position: relative;
+    width: 682px;
+    padding: 41px 61.2px 79.81px 59px;
+
+    background-color: var(--accent-bg-color);
+    color: var(--secondary-text-color);
+    box-shadow: 0px 4px 28.49px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+}
+
 .about__matter {
+    width: 292px;
+    margin-bottom: 42px;
+
+    font-weight: 800;
+    font-size: 34px;
+    line-height: 1.1;
 }
+
+.wrap-rate__list {
+    display: flex;
+    gap: 60.2px;
+}
+
 .about__responsive {
+    width: 251px;
+
+    padding: 18px 17.8px 25.19px 26px;
+    background: var(--secondary-color);
+    border-radius: 19.8652px;
 }
+
 .about__name {
+    margin-bottom: 10.52px;
+
+    font-weight: 600;
+    font-size: 13.2434px;
+    line-height: calc(16/43.2434);
+    letter-spacing: 0.206929px;
+    color: var(--rate-text-color);
+    
 }
+
+.wrap-price {
+    display: flex;
+    align-items: baseline;
+}
+
+.wrap-price>li:first-child {
+    margin-right: 9.1px;
+}
+
 .about__price {
+    margin-bottom: 6.33px;
+
+    font-weight: 600;
+    font-size: 23.176px;
+    line-height: calc(28/23.176);
+    letter-spacing: 0.206929px;
+    color: var(--rate-text-color);
 }
+
 .about__rate {
+    font-weight: 600;
+    font-size: 13.2434px;
+    line-height: calc(16/13.2434);
+    letter-spacing: 0.206929px;
+    color: #FE805C;
 }
+
+.about__rate-down {
+    color: #4643D3;
+}
+
 .about__text {
+    font-weight: 400;
+    font-size: 11.588px;
+    line-height: 14px;
+    text-transform: capitalize;
+
+    color: var(--rate-secondary-text-color);
 }
+
 .about__mobile {
+    position: absolute;
+    top: 76px;
+    padding: 18px 17.8px 25.19px 26px;
+
+    width: 251px;
+    height: 128px;
+    margin-bottom: 168px;
+
+    background: var(--secondary-color);
+    border-radius: 19.8652px;
 }
-.pros {
+
+.about__mobile>.about__name {
+    margin-bottom: 19.15px;
 }
-.pros__title {
+
+.about__mobile>.wrap-price {
+    margin-bottom: 9.71px;
 }
-.pros__name {
+
+.icons-up-size,
+.icons-down-size {
+    width: 9.93px;
+    height: 8.83px;
+    fill: #FE805C;
 }
-.pros__text {
+
+.icons-down-size {
+    fill: #4643D3;
 }
-.coders {
-}
-.coders__title {
-}
-.coders__coment {
-}
-.coders__name {
-}
-.coders__time {
-}
-.git {
-}
+
+/*-------- PROS --------*/
+
+.pros {}
+
+.pros__title {}
+
+.pros__name {}
+
+.pros__text {}
+
+.coders {}
+
+.coders__title {}
+
+.coders__coment {}
+
+.coders__name {}
+
+.coders__time {}
+
+.git {}
