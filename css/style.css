@@ -211,7 +211,7 @@ body {
     line-height: calc(16/43.2434);
     letter-spacing: 0.206929px;
     color: var(--rate-text-color);
-    
+
 }
 
 .wrap-price {
@@ -286,15 +286,58 @@ body {
     fill: #4643D3;
 }
 
+i {
+    font-style: normal;
+    align-self: center;
+  }
+
 /*-------- PROS --------*/
 
-.pros {}
+.pros {
+    padding-bottom: 92px;
+}
 
-.pros__title {}
+.pros__title {
+    margin-bottom: 55px;
+}
 
-.pros__name {}
+.card-list {
+    display: flex;
+    gap: 28.95px;
+    justify-content: center;
+}
 
-.pros__text {}
+.card-list__item {
+    max-width: 249.05px;
+  
+
+    padding: 26px 26px;
+    background: var(--secondary-color);
+    border-radius: 21.975px;
+    color: #000000;
+    text-align: center;
+}
+
+.card-list__name {
+    margin-bottom: 29.63px;
+
+    font-weight: 700;
+    font-size: 17.7555px;
+    line-height: calc(22/17.7555);
+
+}
+
+.card-list__text {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: calc(22/18);
+}
+
+.card-list__text-big {
+    font-weight: 300;
+font-size: 21.5172px;
+line-height: calc(26/21.5172);
+}
 
 .coders {}
 
