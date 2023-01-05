@@ -1,5 +1,5 @@
 :root {
-    --primary-bg-color: #E5E5E5;
+    --primary-bg-color: #FBFBFB;
     --accent-bg-color: #3664D8;
     --secondary-color: #FFFFFF;
     --text-color: #212353;
@@ -34,7 +34,7 @@ button {
 }
 
 .container {
-    width: 1440px;
+    max-width: 1440px;
     padding: 0 92px;
     margin: 0 auto;
 }
@@ -309,9 +309,10 @@ i {
 
 .card-list__item {
     max-width: 249.05px;
+    height: 293px;
   
 
-    padding: 26px 26px;
+    padding: 26px 26px 48px 26px;
     background: var(--secondary-color);
     border-radius: 21.975px;
     color: #000000;
@@ -328,25 +329,100 @@ i {
 }
 
 .card-list__text {
+    width: 172px;
     font-weight: 300;
-    font-size: 18px;
+    font-size: 22px;
     line-height: calc(22/18);
 }
 
 .card-list__text-big {
     font-weight: 300;
-font-size: 21.5172px;
-line-height: calc(26/21.5172);
+    font-size: 21.5172px;
+    line-height: calc(26/21.5172);
 }
 
-.coders {}
+.card-list__item>img {
+    display: block;
+    margin: 0 auto;;
+    margin-bottom: 12px;
+}
 
-.coders__title {}
+.coders {
+  
+}
 
-.coders__coment {}
+.coders__title {
+    margin-bottom: 53px;
+}
 
-.coders__name {}
+.coders__list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 43px;
+}
 
-.coders__time {}
+.coders__items {
+    display: flex;
+    gap: 15px;
 
-.git {}
+    width: 660px;
+    padding: 15px 36px 15px 15px;
+
+    border-radius: 75px;
+    background-color: var(--accent-bg-color);
+    color: var(--secondary-color);
+
+}
+
+.coders__items>img {
+    border-radius: 50%;
+}
+
+.coders__wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.coders__coment {
+margin-bottom: 4.8px;
+
+    font-weight: 600;
+font-size: 14px;
+line-height: 1.43;
+letter-spacing: 0.25px;
+}
+
+.coders__name {
+    font-weight: 400;
+font-size: 12px;
+line-height: 1.33;
+letter-spacing: 0.25px;
+opacity: 0.5;
+}
+
+.coders__time {
+       margin-left: auto;
+}
+
+.git {
+    height: 65px;
+    text-align: center;
+    font-weight: 200;
+font-size: 26.3476px;
+line-height: 1.1;
+
+color: var(--text-color);
+
+}
+
+footer {
+    text-align: center;
+    font-weight: 600;
+font-size: 12px;
+line-height: 1.8;
+letter-spacing: 0.01em;
+}

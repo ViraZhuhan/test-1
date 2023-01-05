@@ -35,7 +35,9 @@
             <ul class="about__list list">
                 <li class="item">
                     <div class="wrap-task">
-                        <img src="./img/photo.jpg" alt="photo Andy" width="115" height="115">
+                        <img 
+                        srcset="./img/photo.jpg 1x, ./img/photo-2x.jpg 2x, /img/photo-3x.jpg 3x"
+                        src="./img/photo.jpg" alt="photo Andy" width="115" height="115">
                         <p class="about__author"> <b>Andy</b> <br>
                             Head Of UX Design</p>
                         </p>
@@ -99,14 +101,24 @@
            
             <h2 class="pros__title title">What Pros Are Saying...</h2>
             <ul class="card-list list">
-            <li class="card-list__item"><h3 class="card-list__name">Nia</h3>
+            <li class="card-list__item">
+                <img 
+                srcset="./img/foto_prof_1.jpg 1x, ./img/foto_prof_1-2x.jpg 2x, /img/foto_prof_1-3x.jpg 3x"
+                src="./img/foto_prof_1.jpg" alt="photo Nia" width="76.09" height="76.09">
+                <h3 class="card-list__name">Nia</h3>
             <p class="card-list__text">“This task can be perfect for students from FIT”</p>
 </li>
 <li class="card-list__item">
+    <img 
+    srcset="./img/foto_prof_2.jpg 1x, ./img/foto_prof_2-2x.jpg 2x, /img/foto_prof_2-3x.jpg 3x"
+    src="./img/foto_prof_2.jpg" alt="photo Abigale" width="76.09" height="76.09">
             <h3 class="card-list__name">Abigale</h3>
             <p class="card-list__text">“I am so sexy, that men are doing test tasks for me for free.”</p>
         </li>
         <li class="card-list__item">
+            <img 
+            srcset="./img/foto_prof_3.jpg 1x, ./img/foto_prof_3-2x.jpg 2x, /img/foto_prof_3-3x.jpg 3x"
+            src="./img/foto_prof_3.jpg" alt="photo Fedya" width="76.09" height="76.09">
             <h3 class="card-list__name">Fedya</h3>
             <p class="card-list__text card-list__text-big">“Kuku Epta. EZ Task.”</p>
         </li>
@@ -117,17 +129,33 @@
     <!-------- CODERS -------->
     <section class="coders">
         <div class="container">
-
             <h2 class="coders__title title">What Other Coders Are Saying...</h2>
-            <p class="coders__coment">Wow, this test task is absolutely amazing! Loved it!</p>
-            <h3 class="coders__name">John Kennedy</h3>
+           <ul class="coders__list list">
+            <li class="coders__items">
+                <img 
+                srcset="./img/coder_1.jpg 1x, ./img/coder_1-2x.jpg 2x, /img/fcoder_1-3x.jpg 3x"
+                src="./img/coder_1.jpg" alt="photo John Kennedy" width="50" height="50">
+                <div class="coders__wrap">
+                <p class="coders__coment">Wow, this test task is absolutely amazing! Loved it!</p>
+                <h3 class="coders__name">John Kennedy</h3>
+            </div>
+            <div class="estimate">
             <p class="coders__time">05:20</p>
-
-
-            <p class="coders__coment">Holy cow, developers rock, but I missed the 5 stars button.</p>
-            <h3 class="coders__name">Vasiliy Igorsky</h3>
-            <p class="coders__time">14:30</p>
-
+            </div>
+            </li>
+            <li class="coders__items">
+                <img 
+                srcset="./img/coder_2.jpg 1x, ./img/coder_2-2x.jpg 2x, /img/fcoder_2-3x.jpg 3x"
+                src="./img/coder_2.jpg" alt="photo Vasiliy Igorsky" width="50" height="50">
+                <div class="coders__wrap">
+                <p class="coders__coment">Holy cow, developers rock, but I missed the 5 stars button.</p>
+                <h3 class="coders__name">Vasiliy Igorsky</h3>
+            </div>
+            <div class="estimate">
+                <p class="coders__time">14:30</p></li>
+                </div>
+           </ul>
+           
             <p class="git">Don’t Forget To Deploy Project To GitHub Pages</p>
 
         </div>
@@ -135,8 +163,8 @@
     <!-------- FOOTER -------->
     <footer>
         <div class="container">
-            <h2><span>© Task Limited™</span>, 2020. All rights reserved</h2>.
-            <p>Terms Of Service | Privacy Policy</p>
+            <h2><span>© Task Limited™</span>, 2020. All rights reserved</h2>
+            <p class="policy">Terms Of Service | Privacy Policy</p>
         </div>
     </footer>
 
